@@ -1,15 +1,16 @@
 #custo por tatuagem
 
 maquina = int(input("Valor da sua maquina: "))
-material = int(input("Gasto de material mensal: "))
-salario = int(input("Salario mensal planejado: "))
-valor_hora = float(input("Valor hora: "))
+material = int(input("Gasto mensal com material, loja e transporte: "))
+salario = int(input("Salario pessoal planejado: "))
+valor_hora = float(input("Valor hora cobrado: "))
+horas_trabalhadas = float(input("Media de horas trabalhadas no mês: "))
 estudio = int(input("Porcentagem do Estudio: "))
 
 maquina_custo = float(maquina / 24)
 despesa = float(valor_hora * (estudio / 100))
 
-custo_tatuagem = ((maquina_custo + material + salario ) / 44) + despesa
+custo_tatuagem = ((maquina_custo + material + salario ) / horas_trabalhadas) + despesa
 
 print ("Custo da hora: ", "{:.2f}".format (custo_tatuagem))
 
