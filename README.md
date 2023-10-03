@@ -1,3 +1,3 @@
 # Calculadora
 
-Calculadora de Indice de Massa Corporal com interface gráfica.
+Diferentes tipos de calculadoras e conversores.
